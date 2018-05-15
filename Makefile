@@ -19,5 +19,3 @@ Content.o: Content.cpp Content.h IllegalCharException.h
 IllegalCoordinateException.o: IllegalCoordinateException.cpp IllegalCoordinateException.h 
 	$(CXX) $(CXXFLAGS) --compile IllegalCoordinateException.cpp 
 
-Clean:
-		rm *.o a.out
