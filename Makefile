@@ -18,5 +18,13 @@ Content.o:Content.cpp Content.h IllegalCharException.h
 IllegalCoordinateException.o:IllegalCoordinateException.cpp IllegalCoordinateException.h 
 	$(CXX) $(CXXFLAGS) --compile IllegalCoordinateException.cpp -o IllegalCoordinateException.o
 
+main.o: main.cpp Board.h 
+$(CXX) $(CXXFLAGS) -c main.cpp -o main.o
+
 Clean: 
 	rm *.o a.out
+
+
+buildAndRun: all main.o
+	$(CXX) $(CXXFLAGS) Board.o Node.o main.o
+./a.out
