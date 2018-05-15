@@ -19,7 +19,7 @@ IllegalCoordinateException.o:IllegalCoordinateException.cpp IllegalCoordinateExc
 	$(CXX) $(CXXFLAGS) --compile IllegalCoordinateException.cpp -o IllegalCoordinateException.o
 
 main.o: main.cpp Board.h 
-$(CXX) $(CXXFLAGS) -c main.cpp -o main.o
+	$(CXX) $(CXXFLAGS) -c main.cpp -o main.o
 
 Clean: 
 	rm *.o a.out
