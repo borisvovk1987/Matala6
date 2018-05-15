@@ -3,7 +3,7 @@
 CXX=clang++-5.0
 CXXFLAGS=-std=c++17	
 	
-all:Board.o  Board.o BoardRow.o Content.o IllegalCoordinateException.o  IllegalCharException.o
+all:Board.o BoardRow.o Content.o IllegalCoordinateException.o  
 	
 
 
