@@ -6,8 +6,8 @@ CXXFLAGS=-std=c++17
 	
 	
 
-a.out:Board.o BoardRow.o Content.o IllegalCoordinateException.o 
-	$(CCX) main.cpp *.o
+all:Board.o BoardRow.o Content.o IllegalCoordinateException.o 
+	
 	#(CXX) $(CXXFLAGS)Board.o BoardRow.o Content.o    IllegalCoordinateException.o 
 
 Board.o:Board.cpp Board.h BoardRow.h Content.h IllegalCoordinateException.h  IllegalCharException.h	
@@ -22,5 +22,3 @@ Content.o:Content.cpp Content.h IllegalCharException.h
 IllegalCoordinateException.o:IllegalCoordinateException.cpp IllegalCoordinateException.h 
 	$(CXX) $(CXXFLAGS) --compile IllegalCoordinateException.cpp -o IllegalCoordinateException.o
 
-Clean 
-	rm  *.o a.out
