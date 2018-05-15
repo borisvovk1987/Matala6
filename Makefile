@@ -26,5 +26,5 @@ Clean:
 
 
 buildAndRun: all main.o
-	$(CXX) $(CXXFLAGS) Board.o Node.o main.o
+	$(CXX) $(CXXFLAGS) main.o Board.o BoardRow.o Content.o IllegalCoordinateException.o 
 ./a.out
