@@ -7,11 +7,8 @@ all:a.out
 	
 
 
-a.out:main.o Board.o BoardRow.o Content.o IllegalCoordinateException.o 
-	$(CXX) $(CXXFLAGS)   main.o Board.o BoardRow.o Content.o IllegalCoordinateException.o -o a.out
-
-main.o:main.cpp Board.cpp Board.h BoardRow.h Content.h IllegalCoordinateException.h  IllegalCharException.h
-	$(CXX) $(CXXFLAGS) --compile main.cpp -o main.o 
+a.out:Board.o BoardRow.o Content.o IllegalCoordinateException.o 
+$(CXX) $(CXXFLAGS) Board.o BoardRow.o Content.o IllegalCoordinateException.o -o a.out
 
 Board.o:Board.cpp Board.h BoardRow.h Content.h IllegalCoordinateException.h  IllegalCharException.h	
 	$(CXX) $(CXXFLAGS) --compile Board.cpp -o Board.o
