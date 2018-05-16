@@ -16,7 +16,7 @@ public:
     friend std::ostream& operator<<(std::ostream &out,const Content &other);
     Content& operator=(char content);
     Content& operator=(const Content& content);
-    operator char();
+    operator char()const;
 
 
 };
