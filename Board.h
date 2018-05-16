@@ -23,7 +23,7 @@ public:
     Board(const Board &other);
 
     ~Board();
-    friend std::ostream& operator<<(std::ostream& out,const Board& board );
+    friend std::ostream& operator<<(std::ostream& out,const Board& board )const;
     Board& operator=(const Board&  other );
     Board& operator=(const char cha);
     Content& operator[](std::vector<int>);
