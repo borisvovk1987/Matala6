@@ -29,7 +29,7 @@ Content& Content::operator=(char content)
     return *this;
 }
 
-Content::operator char()
+Content::operator char()const
 {
     return m_content;
 }
