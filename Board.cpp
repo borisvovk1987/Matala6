@@ -54,7 +54,7 @@ Board::~Board()
 
 }
 
-std::ostream& operator<<(std::ostream& out,const Board &board)
+std::ostream& operator<<(std::ostream& out,const Board &board)const
 {
     for(int i=0;i<board.m_boardSize;i++)
     {
